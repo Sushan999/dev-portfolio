@@ -29,7 +29,7 @@ export const projects: Project[] = [
     description: "",
     longDescription:
       "A modern task management solution designed for teams. Features include drag-and-drop kanban boards, real-time collaboration using Socket.io, multiple workspace support, task assignments, due dates, ",
-    image: "ShopHub.png",
+    image: "Shophub.png",
     technologies: ["Next.js", "Typescript", "Tailwind"],
     liveUrl: "https://next-ecommerce-shophub.vercel.app/",
     githubUrl: "https://github.com/Sushan999/Next-ecommerce",
@@ -78,7 +78,7 @@ export const projects: Project[] = [
     description: "",
     longDescription:
       "A robust RESTful API built for a social media platform. Implements JWT-based authentication, user profiles, post creation and management, commenting system, likes, follows, and real-time notifications. The API is fully documented using Swagger/OpenAPI, making it easy for frontend .",
-    image: "ValleyRestro.png",
+    image: "Valleyrestro.png",
     technologies: ["React", "tailwind", "CSS", "Javascript"],
     liveUrl: "https://valley-restro.vercel.app/",
     githubUrl: "https://github.com/Sushan999/ValleyRestro",
