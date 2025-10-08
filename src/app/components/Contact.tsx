@@ -12,7 +12,7 @@ export function Contact() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="contact" className="py-24 px-6 lg:px-8">
+    <section id="contact" className="py-24 px-6 lg:px-8 scroll-mt-16">
       <div className="max-w-4xl mx-auto">
         <motion.div
           ref={ref}
@@ -97,10 +97,14 @@ export function Contact() {
 
             <div className="flex items-center justify-center gap-6 mt-8 pt-8 border-t border-border">
               {[
-                { icon: Github, href: "https://github.com", label: "GitHub" },
+                {
+                  icon: Github,
+                  href: "https://github.com/sushan999/",
+                  label: "GitHub",
+                },
                 {
                   icon: Linkedin,
-                  href: "https://linkedin.com",
+                  href: "https://www.linkedin.com/in/susan-thapa-512666265",
                   label: "LinkedIn",
                 },
                 {
@@ -127,7 +131,9 @@ export function Contact() {
         </motion.div>
 
         <footer className="mt-16 pt-8 border-t border-border text-center text-sm text-muted-foreground">
-          <p>© 2025 Alex Morgan. Built with Next.js and deployed on Vercel.</p>
+          <p>
+            © 2025 Susan Thapa Magar. Built with Next.js and deployed on Vercel.
+          </p>
         </footer>
       </div>
     </section>

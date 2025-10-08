@@ -12,7 +12,10 @@ export function Experience({ experience }: { experience: ExperienceType[] }) {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="experience" className="py-24 px-6 lg:px-8 bg-muted/30">
+    <section
+      id="experience"
+      className="py-24 px-6 lg:px-8 bg-muted/30 scroll-mt-16"
+    >
       <div className="max-w-4xl mx-auto">
         <motion.h2
           ref={ref}

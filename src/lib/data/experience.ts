@@ -16,6 +16,7 @@ export const experience: Experience[] = [
     technologies: [
       "HTML",
       "CSS",
+      "JavaScript",
       "React.js",
       "Astro.js",
       "Node.js",

@@ -15,8 +15,7 @@ export const projects: Project[] = [
     id: "ecommerce-platform",
     title: "Rentease - Home Rental",
     description: "",
-    longDescription:
-      "This comprehensive e-commerce solution handles everything from product catalog management to order fulfillment. Features include real-time inventory tracking, secure payment processing via Stripe, .",
+    longDescription: "",
     image: "Rentease.png",
     technologies: ["Next.js", "TypeScript", "MySql", "Prisma", "Tailwind CSS"],
     liveUrl: "https://rent-ease-next.vercel.app/",
@@ -27,8 +26,7 @@ export const projects: Project[] = [
     id: "ShopHub",
     title: "ShopHub - Online Shopping Website",
     description: "",
-    longDescription:
-      "A modern task management solution designed for teams. Features include drag-and-drop kanban boards, real-time collaboration using Socket.io, multiple workspace support, task assignments, due dates, ",
+    longDescription: " ",
     image: "Shophub.png",
     technologies: ["Next.js", "Typescript", "Tailwind"],
     liveUrl: "https://next-ecommerce-shophub.vercel.app/",
@@ -39,8 +37,7 @@ export const projects: Project[] = [
     id: "CarRental",
     title: "Car-Rental - Rent Luxurious Cars",
     description: "",
-    longDescription:
-      "A powerful analytics platform that provides real-time insights into user behavior and application performance. Built with D3.js and Chart.js for rich data visualizations, the dashboard offers .",
+    longDescription: "",
     image: "Carrental.png",
     technologies: ["React.js", "Express.js", "Mongodb", "Tailwind"],
     liveUrl: "https://car-rental-kohl-kappa.vercel.app/",
@@ -63,8 +60,7 @@ export const projects: Project[] = [
     id: "Myntra",
     title: "Myntra",
     description: "",
-    longDescription:
-      "A robust RESTful API built for a social media platform. Implements JWT-based authentication, user profiles, post creation and management, commenting system, likes, follows, and real-time notifications. The API is fully documented using Swagger/OpenAPI, making it easy for frontend .",
+    longDescription: "",
     image: "Myntra.png",
     technologies: ["HTML", "CSS", "Javascript"],
     liveUrl: "https://myntra-clone-zeta-seven.vercel.app/",
@@ -76,8 +72,7 @@ export const projects: Project[] = [
     id: "ValleyRestro",
     title: "ValleyRestro - Restaurant",
     description: "",
-    longDescription:
-      "A robust RESTful API built for a social media platform. Implements JWT-based authentication, user profiles, post creation and management, commenting system, likes, follows, and real-time notifications. The API is fully documented using Swagger/OpenAPI, making it easy for frontend .",
+    longDescription: "",
     image: "Valleyrestro.png",
     technologies: ["React", "tailwind", "CSS", "Javascript"],
     liveUrl: "https://valley-restro.vercel.app/",

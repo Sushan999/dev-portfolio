@@ -20,7 +20,10 @@ export function Skills({ skills }: { skills: SkillCategory[] }) {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="skills" className="py-24 px-6 lg:px-8 bg-muted/30">
+    <section
+      id="skills"
+      className="py-24 px-6 lg:px-8 bg-muted/30 scroll-mt-16"
+    >
       <div className="max-w-6xl mx-auto">
         <motion.div
           ref={ref}

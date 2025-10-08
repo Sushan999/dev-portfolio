@@ -6,7 +6,10 @@ import { motion } from "framer-motion";
 
 export function Hero() {
   return (
-    <section className="min-h-screen flex items-center justify-center px-6 lg:px-8 pt-16 gradient-bg relative overflow-hidden">
+    <section
+      id="about"
+      className="min-h-screen flex items-center justify-center px-6 lg:px-8 pt-16 gradient-bg relative overflow-hidden"
+    >
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <motion.div
           className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl"
@@ -85,10 +88,22 @@ export function Hero() {
           className="flex items-center justify-center gap-6"
         >
           {[
-            { icon: Github, href: "https://github.com", label: "GitHub" },
-            { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
+            {
+              icon: Github,
+              href: "https://github.com/sushan999/",
+              label: "GitHub",
+            },
+            {
+              icon: Linkedin,
+              href: "https://www.linkedin.com/in/susan-thapa-512666265",
+              label: "LinkedIn",
+            },
             { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
-            { icon: Mail, href: "mailto:alex@example.com", label: "Email" },
+            {
+              icon: Mail,
+              href: "mailto:athapasusan777@gmail.com.com",
+              label: "Email",
+            },
           ].map((social, index) => (
             <motion.a
               key={social.label}
