@@ -2,10 +2,34 @@
 
 import { Card } from "@/components/ui/card";
 import { Code2, Database, Cloud, Wrench } from "lucide-react";
-import type { SkillCategory } from "@/lib/data/skills";
-import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+
+// Directly import the static skills data
+const skills = [
+  {
+    category: "Frontend",
+    skills: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Astro.js",
+      "HTML",
+      "CSS",
+    ],
+  },
+  { category: "Backend", skills: ["Node.js", "Express", "REST APIs"] },
+  {
+    category: "Database",
+    skills: ["PostgreSQL", "MongoDB", "MySQL", "Prisma"],
+  },
+  { category: "DevOps", skills: ["AWS", "Git"] },
+  {
+    category: "Tools",
+    skills: ["VS Code", "Figma", "Postman", "Webpack", "Vite"],
+  },
+];
 
 const iconMap: Record<string, typeof Code2> = {
   Frontend: Code2,
@@ -15,7 +39,7 @@ const iconMap: Record<string, typeof Code2> = {
   Tools: Wrench,
 };
 
-export function Skills({ skills }: { skills: SkillCategory[] }) {
+export function Skills() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
@@ -30,20 +54,22 @@ export function Skills({ skills }: { skills: SkillCategory[] }) {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.5 }}
+          className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Skills & <span className="text-primary">Technologies</span>
           </h2>
-          <p className="text-lg text-muted-foreground mb-12">
+          <p className="text-lg text-muted-foreground">
             Technologies and tools I work with regularly
           </p>
         </motion.div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skills.map((category, index) => {
             const Icon = iconMap[category.category] || Code2;
             return (
               <motion.div
-                key={index}
+                key={category.category}
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={
                   isInView

@@ -2,12 +2,39 @@
 
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import type { Experience as ExperienceType } from "@/lib/data/experience";
-import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
-export function Experience({ experience }: { experience: ExperienceType[] }) {
+interface ExperienceType {
+  title: string;
+  company: string;
+  period: string;
+  description: string;
+  technologies: string[];
+}
+
+// Static data
+const experience: ExperienceType[] = [
+  {
+    title: "Front-end Developer Intern",
+    company: "Redis Digital",
+    period: "2025",
+    description:
+      "Leading development of cloud-native applications using Next.js and Node.js. Architecting scalable microservices and mentoring junior developers.",
+    technologies: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React.js",
+      "Astro.js",
+      "Node.js",
+      "Git",
+      "Wordpress",
+    ],
+  },
+];
+
+export function Experience() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
@@ -26,6 +53,7 @@ export function Experience({ experience }: { experience: ExperienceType[] }) {
         >
           <span className="text-primary">Experience</span>
         </motion.h2>
+
         <div className="space-y-8">
           {experience.map((exp, index) => (
             <motion.div
