@@ -4,12 +4,25 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Github, Linkedin, Mail, Twitter } from "lucide-react";
 import { motion } from "framer-motion";
 
+import { Particles } from "@/components/ui/particles";
+import { Meteors } from "@/components/ui/meteors";
+
 export function Hero() {
   return (
     <section
       id="about"
       className="min-h-screen flex items-center justify-center px-6 lg:px-8 pt-16 gradient-bg relative overflow-hidden"
     >
+      <Particles
+        className="absolute inset-0"
+        quantity={150}
+        ease={80}
+        color="#ffff"
+        size={0.66}
+        refresh
+      />
+      <Meteors />
+
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <motion.div
           className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl"
@@ -45,7 +58,7 @@ export function Hero() {
           className="mb-6"
         >
           <p className="text-sm text-primary font-mono mb-4">Hello, I{"'"}m</p>
-          <h1 className="text-5xl md:text-6xl font-bold mb-1 text-balance bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">
+          <h1 className="text-5xl md:text-6xl font-bold mb-1 text-balance bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent pb-4">
             Susan Thapa Magar
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8">
@@ -61,7 +74,7 @@ export function Hero() {
         >
           I build scalable web applications with modern technologies. Passionate
           about creating elegant solutions to complex problems, with expertise
-          in React, Next.js, Node.js, and cloud architecture.
+          in React.js, Next.js and Node.js,
         </motion.p>
 
         <motion.div
