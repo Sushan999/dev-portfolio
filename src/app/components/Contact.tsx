@@ -131,9 +131,7 @@ export function Contact() {
         </motion.div>
 
         <footer className="mt-16 pt-8 border-t border-border text-center text-sm text-muted-foreground">
-          <p>
-            © 2025 Susan Thapa Magar. Built with Next.js and deployed on Vercel.
-          </p>
+          <p>© 2025 Susan Thapa Magar.</p>
         </footer>
       </div>
     </section>

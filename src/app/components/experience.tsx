@@ -20,7 +20,7 @@ const experience: ExperienceType[] = [
     company: "Redis Digital",
     period: "2025",
     description:
-      "Leading development of cloud-native applications using Next.js and Node.js. Architecting scalable microservices and mentoring junior developers.",
+      "Assisted in building and maintaining responsive web applications using Next.js and Astro.js. Collaborated with senior developers to implement new features and improve performance.",
     technologies: [
       "HTML",
       "CSS",

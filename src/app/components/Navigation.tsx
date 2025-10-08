@@ -44,12 +44,12 @@ export function Navigation() {
             SM
           </a>
 
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-8 ">
             {navItems.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
-                className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                className="text-sm tracking-wider font-medium text-muted-foreground hover:text-primary transition-colors"
               >
                 {item.label}
               </a>
@@ -57,7 +57,7 @@ export function Navigation() {
             <ThemeToggle />
           </div>
 
-          <div className="md:hidden flex items-center gap-2 px-6 lg:px-0">
+          <div className="md:hidden flex items-center gap-2 px-6 lg:px-0  ">
             <ThemeToggle />
             <Button
               variant="ghost"
@@ -65,16 +65,22 @@ export function Navigation() {
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
               {isMobileMenuOpen ? (
-                <X className="h-5 w-5" />
+                <X className="size-5 " />
               ) : (
-                <Menu className="h-5 w-5" />
+                <Menu className="size-5 " />
               )}
             </Button>
           </div>
         </div>
 
-        {isMobileMenuOpen && (
-          <div className="md:hidden py-4 w-full border-t bg-background/80 backdrop-blur-md border-b border-border px-6">
+        <div
+          className={`md:hidden absolute left-0 right-0 top-16 z-40 transform transition-all duration-200 ease-out ${
+            isMobileMenuOpen
+              ? "translate-y-0 opacity-100 pointer-events-auto"
+              : "-translate-y-full opacity-0 pointer-events-none"
+          }`}
+        >
+          <div className="py-4 w-full border-t bg-background/80 backdrop-blur-md border-b border-border px-6">
             {navItems.map((item) => (
               <a
                 key={item.href}
@@ -86,7 +92,7 @@ export function Navigation() {
               </a>
             ))}
           </div>
-        )}
+        </div>
       </div>
     </nav>
   );
