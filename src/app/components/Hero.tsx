@@ -4,12 +4,25 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Github, Linkedin, Mail, Twitter } from "lucide-react";
 import { motion } from "framer-motion";
 
+import { Particles } from "@/components/ui/particles";
+import { Meteors } from "@/components/ui/meteors";
+
 export function Hero() {
   return (
     <section
       id="about"
       className="min-h-screen flex items-center justify-center px-6 lg:px-8 pt-16 gradient-bg relative overflow-hidden"
     >
+      <Particles
+        className="absolute inset-0"
+        quantity={150}
+        ease={80}
+        color="#ffff"
+        size={0.66}
+        refresh
+      />
+      <Meteors />
+
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <motion.div
           className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl"

@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import { ShineBorder } from "@/components/ui/shine-border";
 
 // Define Project type
 export interface Project {
@@ -36,7 +37,8 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
     >
-      <Card className="overflow-hidden hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 gap-3 py-0 group border-border/50 hover:border-primary/50 w-full h-full">
+      <Card className="relative overflow-hidden hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 gap-3 py-0 group border-border/50 hover:border-primary/50 w-full h-full">
+        <ShineBorder />
         <div className="aspect-video bg-muted relative overflow-hidden cursor-pointer">
           <motion.img
             src={project.image || "/placeholder.svg"}

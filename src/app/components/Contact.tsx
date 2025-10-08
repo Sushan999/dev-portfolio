@@ -6,13 +6,25 @@ import { Mail, MapPin, Linkedin, Github, Twitter } from "lucide-react";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import { Particles } from "@/components/ui/particles";
 
 export function Contact() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="contact" className="py-24 px-6 lg:px-8 scroll-mt-16">
+    <section
+      id="contact"
+      className="py-24 px-6 lg:px-8 scroll-mt-16v relative overflow-hidden"
+    >
+      <Particles
+        className="absolute inset-0"
+        quantity={150}
+        ease={80}
+        color="#ffff"
+        size={0.66}
+        refresh
+      />
       <div className="max-w-4xl mx-auto">
         <motion.div
           ref={ref}
@@ -130,7 +142,7 @@ export function Contact() {
           </Card>
         </motion.div>
 
-        <footer className="mt-16 pt-8 border-t border-border text-center text-sm text-muted-foreground">
+        <footer className="mt-8 pt-8 border-t border-border text-center text-sm text-muted-foreground">
           <p>© 2025 Susan Thapa Magar.</p>
         </footer>
       </div>
