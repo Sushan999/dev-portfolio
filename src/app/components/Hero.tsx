@@ -13,14 +13,16 @@ export function Hero() {
       id="about"
       className="min-h-screen flex items-center justify-center px-6 lg:px-8 pt-16 gradient-bg relative overflow-hidden"
     >
-      <Particles
-        className="absolute inset-0"
-        quantity={150}
-        ease={80}
-        color="#ffff"
-        size={0.66}
-        refresh
-      />
+      <div className="hidden md:block">
+        <Particles
+          className="absolute inset-0"
+          quantity={150}
+          ease={80}
+          color="#fffff"
+          size={0.66}
+          refresh
+        />
+      </div>
       <Meteors />
 
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -58,7 +60,7 @@ export function Hero() {
           className="mb-6"
         >
           <p className="text-sm text-primary font-mono mb-4">Hello, I{"'"}m</p>
-          <h1 className="text-5xl md:text-6xl font-bold mb-1 text-balance bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent pb-4">
+          <h1 className="text-3xl md:text-6xl font-bold mb-1 text-balance bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent pb-4">
             Susan Thapa Magar
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8">
@@ -70,7 +72,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-lg text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed"
+          className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed"
         >
           I build scalable web applications with modern technologies. Passionate
           about creating elegant solutions to complex problems, with expertise
