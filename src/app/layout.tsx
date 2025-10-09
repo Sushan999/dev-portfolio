@@ -15,18 +15,22 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://susanthapamagar.vercel.app/"),
   title: "Susan Thapa | Dev Portfolio",
   description:
     "Full Stack Developer specializing in Next.js, MERN, and TypeScript.",
+  icons: {
+    icon: "code.svg",
+  },
   openGraph: {
     title: "Susan Thapa | Dev Portfolio",
     description:
       "Explore my projects, skills, and experience in modern web development.",
-    url: "",
+    url: "https://susanthapa.dev",
     siteName: "Dev Portfolio",
     images: [
       {
-        url: "thumbnail.png",
+        url: "/thumbnail.png",
         width: 1200,
         height: 630,
         alt: "Preview of Susan Thapa's Portfolio",

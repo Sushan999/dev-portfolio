@@ -36,7 +36,28 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
     >
-      <Card className="relative overflow-hidden hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 gap-3 py-0 group border-border/50 hover:border-primary/50 w-full h-full">
+      <Card
+        className="relative overflow-hidden hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 gap-3 py-0 group border-border/50 hover:border-primary/50 w-full h-full cursor-pointer"
+        onClick={(e) => {
+          const target = e.target as HTMLElement | null;
+          if (target && target.closest("a, button")) return;
+          if (project.liveUrl) {
+            window.open(project.liveUrl, "_blank", "noopener,noreferrer");
+          }
+        }}
+        tabIndex={0}
+        role="button"
+        onKeyDown={(e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            const target = e.target as HTMLElement | null;
+
+            if (target && target.closest("a, button")) return;
+            if (project.liveUrl) {
+              window.open(project.liveUrl, "_blank", "noopener,noreferrer");
+            }
+          }
+        }}
+      >
         <ShineBorder />
         <div className="aspect-video bg-muted relative overflow-hidden cursor-pointer">
           <motion.img
