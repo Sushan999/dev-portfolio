@@ -8,7 +8,6 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { ShineBorder } from "@/components/ui/shine-border";
 
-// Define Project type
 export interface Project {
   id: string;
   title: string;
