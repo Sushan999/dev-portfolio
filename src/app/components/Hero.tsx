@@ -23,6 +23,16 @@ export function Hero() {
           refresh
         />
       </div>
+      <div className="">
+        <Particles
+          className="absolute inset-0"
+          quantity={15}
+          ease={80}
+          color="#fffff"
+          size={0.66}
+          refresh
+        />
+      </div>
       <Meteors />
 
       {/* Removed rotating/animated blurred circles from the mid background */}
