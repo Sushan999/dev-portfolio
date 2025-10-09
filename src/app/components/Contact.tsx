@@ -17,14 +17,26 @@ export function Contact() {
       id="contact"
       className="py-24 px-6 lg:px-8 scroll-mt-16v relative overflow-hidden"
     >
-      <Particles
-        className="absolute inset-0"
-        quantity={150}
-        ease={80}
-        color="#ffff"
-        size={0.66}
-        refresh
-      />
+      <div className="hidden md:block">
+        <Particles
+          className="absolute inset-0"
+          quantity={150}
+          ease={80}
+          color="#fffff"
+          size={0.66}
+          refresh
+        />
+      </div>
+      <div className="">
+        <Particles
+          className="absolute inset-0"
+          quantity={15}
+          ease={80}
+          color="#fffff"
+          size={0.66}
+          refresh
+        />
+      </div>
       <div className="max-w-4xl mx-auto">
         <motion.div
           ref={ref}
