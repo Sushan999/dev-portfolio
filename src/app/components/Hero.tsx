@@ -48,7 +48,7 @@ export function Hero() {
           <h1 className="text-3xl md:text-6xl font-bold mb-1 text-balance bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent pb-4">
             Susan Thapa Magar
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8">
+          <p className="text-xl md:text-2xl text-primary mb-8">
             Full Stack Developer
           </p>
         </motion.div>

@@ -39,7 +39,7 @@ export function Navigation() {
         <div className="flex items-center justify-between h-12 md:h-16">
           <a
             href="#"
-            className="text-xl font-bold text-foreground hover:text-primary transition-colors px-6 lg:px-0"
+            className="text-xl font-bold  hover:text-muted-foreground transition-colors px-6 lg:px-0"
           >
             SM
           </a>
@@ -49,7 +49,7 @@ export function Navigation() {
               <a
                 key={item.href}
                 href={item.href}
-                className="text-sm tracking-wider font-medium text-muted-foreground hover:text-primary transition-colors"
+                className="text-sm tracking-wider font-medium text-primary hover:text-muted-foreground transition-colors"
               >
                 {item.label}
               </a>
@@ -74,7 +74,7 @@ export function Navigation() {
         </div>
 
         <div
-          className={`md:hidden absolute left-0 right-0 top-16 z-40 transform transition-all duration-200 ease-out ${
+          className={`md:hidden absolute left-0 right-0 top-12 z-40 transform transition-all duration-200 ease-out ${
             isMobileMenuOpen
               ? "translate-y-0 opacity-100 pointer-events-auto"
               : "-translate-y-full opacity-0 pointer-events-none"
