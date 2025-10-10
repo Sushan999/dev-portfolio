@@ -45,7 +45,7 @@ export function Hero() {
           className="mb-6"
         >
           <p className="text-sm text-primary font-mono mb-4">Hello, I{"'"}m</p>
-          <h1 className="text-3xl md:text-6xl font-bold mb-1 text-balance bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent pb-4">
+          <h1 className="text-3xl md:text-6xl font-bold mb-1 text-balance bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent pb-4 nav-font">
             Susan Thapa Magar
           </h1>
           <p className="text-xl md:text-2xl text-primary mb-8">

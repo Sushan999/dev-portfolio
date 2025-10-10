@@ -29,7 +29,7 @@ export function Navigation() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 nav-font ${
         isScrolled
           ? "bg-background/80 backdrop-blur-md border-b border-border"
           : "bg-transparent"
@@ -44,12 +44,12 @@ export function Navigation() {
             SM
           </a>
 
-          <div className="hidden md:flex items-center gap-8 ">
+          <div className="hidden md:flex items-center gap-10 ">
             {navItems.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
-                className="text-sm tracking-wider font-medium text-primary hover:text-muted-foreground transition-colors"
+                className="text-base tracking-wider  text-primary hover:text-muted-foreground transition-colors"
               >
                 {item.label}
               </a>

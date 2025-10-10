@@ -75,7 +75,7 @@ export function Experience() {
           transition={{ duration: 0.5 }}
           className="text-3xl md:text-4xl font-bold mb-12"
         >
-          <p className="text-primary text-center">Experience</p>
+          <p className="text-primary text-center nav-font">Experience</p>
         </motion.h2>
 
         <div className="flex justify-center it py-6">
