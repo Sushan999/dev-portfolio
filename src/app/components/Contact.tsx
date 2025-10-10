@@ -44,7 +44,7 @@ export function Contact() {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 nav-font">
             Get In <span className="text-primary">Touch</span>
           </h2>
           <p className="text-lg text-muted-foreground mb-12">
