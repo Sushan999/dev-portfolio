@@ -93,7 +93,7 @@ export function Projects() {
             Featured <span className="text-primary">Projects</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            A selection of projects I{"'"}ve worked on recently
+            A selection of my recent projects that showcase my skills
           </p>
         </motion.div>
 

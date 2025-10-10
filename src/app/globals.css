@@ -162,3 +162,7 @@ html {
       radial-gradient(circle at 80% 70%, oklch(0.8 0.12 195 / 0.08) 0%, transparent 50%);
   }
 }
+::view-transition-old(root), ::view-transition-new(root) {
+    animation: none;
+    mix-blend-mode: normal;
+}

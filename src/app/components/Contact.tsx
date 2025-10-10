@@ -48,8 +48,9 @@ export function Contact() {
             Get In <span className="text-primary">Touch</span>
           </h2>
           <p className="text-lg text-muted-foreground mb-12">
-            I{"'"}m always open to discussing new projects, creative ideas, or
-            opportunities to be part of your vision.
+            I{"’"}m always open to discussing new projects, creative ideas, or
+            opportunities to contribute to your vision. Let{"’"}s create
+            something amazing together.
           </p>
         </motion.div>
 
