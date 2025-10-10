@@ -59,9 +59,9 @@ export function Hero() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed"
         >
-          I build scalable, high-performing web applications using modern
-          technologies. I{"’"}m passionate about crafting elegant solutions to
-          complex problems with expertise in React.js, Next.js, and Node.js.
+          I build scalable web applications with modern technologies. Passionate
+          about creating elegant solutions to complex problems, with expertise
+          in React.js, Next.js and Node.js.
         </motion.p>
 
         <motion.div
