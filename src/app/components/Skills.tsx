@@ -22,12 +22,12 @@ const skills = [
   { category: "Backend", skills: ["Node.js", "Express", "REST APIs"] },
   {
     category: "Database",
-    skills: ["PostgreSQL", "MongoDB", "MySQL", "Prisma"],
+    skills: ["PostgreSQL", "MongoDB", "MySQL", "Prisma ORM"],
   },
   { category: "DevOps", skills: ["AWS", "Git"] },
   {
     category: "Tools",
-    skills: ["VS Code", "Figma", "Postman", "Webpack", "Vite"],
+    skills: ["VS Code", "Figma", "Postman", "Github", "Canva"],
   },
 ];
 
