@@ -8,6 +8,7 @@ import { cn } from "@/lib/utils";
 
 interface AnimatedThemeTogglerProps
   extends React.ComponentPropsWithoutRef<"button"> {
+  //s
   duration?: number;
 }
 
