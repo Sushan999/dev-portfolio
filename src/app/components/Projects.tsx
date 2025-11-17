@@ -22,7 +22,7 @@ const projects: Project[] = [
     title: "StyleForge - Buy Clothes Online",
     description: "",
     longDescription: "",
-    image: "styleforge.png",
+    image: "Style-forge.png",
     technologies: ["Next.js", "Typescript", "Mongodb", "Tailwind CSS"],
     liveUrl: "https://style-forge.vercel.app/",
     githubUrl: "https://github.com/Sushan999/StyleForge",
