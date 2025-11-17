@@ -7,6 +7,28 @@ import { useRef } from "react";
 // Static projects array
 const projects: Project[] = [
   {
+    id: "CarRental",
+    title: "CarRental - Rent Luxurious Cars",
+    description: "",
+    longDescription: "",
+    image: "Carrental.png",
+    technologies: ["React.js", "Express.js", "Mongodb", "Tailwind"],
+    liveUrl: "https://car-rental-kohl-kappa.vercel.app/",
+    githubUrl: "https://github.com/Sushan999/CarRental",
+    featured: true,
+  },
+  {
+    id: "styleForge",
+    title: "StyleForge - Buy Clothes Online",
+    description: "",
+    longDescription: "",
+    image: "styleforge.png",
+    technologies: ["Next.js", "Typescript", "Mongodb", "Tailwind CSS"],
+    liveUrl: "https://style-forge.vercel.app/",
+    githubUrl: "https://github.com/Sushan999/StyleForge",
+    featured: true,
+  },
+  {
     id: "ecommerce-platform",
     title: "Rentease - Home Rental",
     description: "",
@@ -17,6 +39,7 @@ const projects: Project[] = [
     githubUrl: "https://github.com/Sushan999/RentEase-next",
     featured: true,
   },
+
   {
     id: "ShopHub",
     title: "ShopHub - Online Shopping Website",
@@ -28,17 +51,7 @@ const projects: Project[] = [
     githubUrl: "https://github.com/Sushan999/Next-ecommerce",
     featured: true,
   },
-  {
-    id: "CarRental",
-    title: "Car-Rental - Rent Luxurious Cars",
-    description: "",
-    longDescription: "",
-    image: "Carrental.png",
-    technologies: ["React.js", "Express.js", "Mongodb", "Tailwind"],
-    liveUrl: "https://car-rental-kohl-kappa.vercel.app/",
-    githubUrl: "https://github.com/Sushan999/CarRental",
-    featured: true,
-  },
+
   {
     id: "Estate",
     title: "Estate",
@@ -60,17 +73,6 @@ const projects: Project[] = [
     technologies: ["HTML", "CSS", "Javascript"],
     liveUrl: "https://myntra-clone-zeta-seven.vercel.app/",
     githubUrl: "https://github.com/Sushan999/Myntra_clone",
-    featured: true,
-  },
-  {
-    id: "ValleyRestro",
-    title: "ValleyRestro - Restaurant",
-    description: "",
-    longDescription: "",
-    image: "Valleyrestro.png",
-    technologies: ["React", "tailwind", "CSS", "Javascript"],
-    liveUrl: "https://valley-restro.vercel.app/",
-    githubUrl: "https://github.com/Sushan999/ValleyRestro",
     featured: true,
   },
 ];
