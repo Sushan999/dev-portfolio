@@ -1,10 +1,8 @@
 "use client";
 
-import { ProjectCard, Project } from "./ProjectCard"; // import ProjectCard
-import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
+import { motion } from "framer-motion";
+import { Project, ProjectCard } from "./ProjectCard";
 
-// Static projects array
 const projects: Project[] = [
   {
     id: "CarRental",
@@ -39,25 +37,22 @@ const projects: Project[] = [
     githubUrl: "https://github.com/Sushan999/RentEase-next",
     featured: true,
   },
-
   {
     id: "ShopHub",
     title: "ShopHub - Online Shopping Website",
     description: "",
-    longDescription: " ",
+    longDescription: "",
     image: "Shophub.png",
     technologies: ["Next.js", "Typescript", "Tailwind"],
     liveUrl: "https://next-ecommerce-shophub.vercel.app/",
     githubUrl: "https://github.com/Sushan999/Next-ecommerce",
     featured: true,
   },
-
   {
     id: "Estate",
     title: "Estate",
     description: "",
-    longDescription:
-      "A robust RESTful API built for a social media platform. Implements JWT-based authentication, user profiles, post creation and management, commenting system, likes, follows, and real-time notifications. The API is fully documented using Swagger/OpenAPI, making it easy for frontend .",
+    longDescription: "",
     image: "Estate.png",
     technologies: ["React.js", "Tailwind"],
     liveUrl: "https://estate-alpha.vercel.app/",
@@ -78,16 +73,13 @@ const projects: Project[] = [
 ];
 
 export function Projects() {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
-
   return (
     <section id="projects" className="py-24 px-6 lg:px-8 scroll-mt-16">
       <div className="max-w-6xl mx-auto">
         <motion.div
-          ref={ref}
           initial={{ opacity: 0, y: 20 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
           transition={{ duration: 0.5 }}
           className="text-center mb-12"
         >
@@ -99,11 +91,22 @@ export function Projects() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.map((project, index) => (
-            <ProjectCard key={project.id} project={project} index={index} />
+        <motion.div
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={{
+            hidden: {},
+            show: {
+              transition: { staggerChildren: 0.1 },
+            },
+          }}
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+        >
+          {projects.map((project) => (
+            <ProjectCard key={project.id} project={project} />
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
