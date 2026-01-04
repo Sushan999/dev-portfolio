@@ -61,9 +61,9 @@ export function ProjectCard({ project }: ProjectCardProps) {
           }
         }}
       >
-        <div className="pointer-events-none absolute inset-0 hidden md:block">
+        {/* <div className="pointer-events-none absolute inset-0 hidden md:block">
           <ShineBorder />
-        </div>
+        </div> */}
 
         <div className="relative aspect-video overflow-hidden bg-muted">
           <img
