@@ -80,7 +80,7 @@ export function Skills() {
                 whileHover={{ scale: 1.05 }}
               >
                 <Card className="relative  p-6 hover:shadow-lg hover:shadow-primary/5 transition-all h-full border-border/50 hover:border-primary/30 overflow-hidden">
-                  <BorderBeam />
+                  {/* <BorderBeam /> */}
                   <div className="flex items-center gap-3 mb-4">
                     <motion.div
                       className="p-2 bg-primary/10 rounded-lg"
